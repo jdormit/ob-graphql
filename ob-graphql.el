@@ -28,6 +28,11 @@
 
 (provide 'ob-graphql)
 
+(require 'graphql-mode)
+(require 'json)
+(require 'ob-ref)
+(require 'request)
+
 ;;;###autoload
 (defun org-babel-execute:graphql (body params)
   (let* ((url (cdr (assq :url params)))
