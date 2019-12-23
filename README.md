@@ -3,7 +3,13 @@
 
 This package provides an execution backend for org-babel source blocks that can execute GraphQL queries and display the results inline.
 
-The project should be up on Melpa soon, at which point it can be installed via Emac's standard package management tools, but until then you can put `ob-graphql` on your load path somewhere and load it via `(require 'ob-graphql)`. After that you'll be able to evaluate GraphQL code blocks.
+## Installation
+
+The project should be [up on Melpa soon](https://github.com/melpa/melpa/pull/6606), at which point it can be installed via Emac's standard package management tools, but until then you can put `ob-graphql` on your load path somewhere and load it via `(require 'ob-graphql)`. After that you'll be able to evaluate GraphQL code blocks.
+
+If you're installing `ob-graphql` manually you'll also need to install [`graphql-mode`](https://github.com/davazp/graphql-mode).
+
+## Usage
 
 The URL of the GraphQL server should be given by the `:url` header parameter:
 
