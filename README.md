@@ -56,7 +56,6 @@ Variables can be passed into the source block from other source/example blocks v
 :     }
 :   }
 : }
-
 ```
 
 Additional headers, such as an `Authorization` header, can be passed into the query via the `:headers` header parameter. This parameter should be the name of another source block that evaluates to an alist of header names to header values:
