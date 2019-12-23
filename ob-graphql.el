@@ -4,7 +4,7 @@
 
 ;; Author: Jeremy Dormitzer <jeremy.dormitzer@gmail.com>
 ;; Version: 1.0
-;; Package-Requires: ((graphql-mode "20191024.1221") (request "20191211.2051"))
+;; Package-Requires: ((emacs "24.4") (graphql-mode "20191024.1221") (request "20191211.2051"))
 ;; URL: https://github.com/jdormit/ob-graphql
 
 ;; This program is free software; you can redistribute it and/or modify
