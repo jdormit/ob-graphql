@@ -35,6 +35,10 @@
 
 ;;;###autoload
 (defun org-babel-execute:graphql (body params)
+  "Executes Org-Babel src block BODY with headers parameters PARAMS.
+
+Called by `org-babel-execute-src-block' on source blocks declared
+as type \"graphql.\""
   (let* ((url (cdr (assq :url params)))
 	 (op-name (cdr (assq :operation params)))
 	 (variables (cdr (assq :variables params)))
