@@ -1,4 +1,4 @@
-;;; ob-graphql.el --- org-babel execution backend for GraphQL source blocks  -*- lexical-binding: t; -*-
+;;; ob-graphql.el --- Org-Babel execution backend for GraphQL source blocks  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019 Jeremy Dormitzer
 
