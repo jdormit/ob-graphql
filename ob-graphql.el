@@ -25,13 +25,19 @@
 ;; This package provides an org-babel execution backend for GraphQL code blocks.
 
 ;;; Code:
-
-(provide 'ob-graphql)
-
+(require 'ob)
+(require 'ob-ref)
 (require 'graphql-mode)
 (require 'json)
-(require 'ob-ref)
 (require 'request)
+
+(add-to-list 'org-babel-tangle-lang-exts '("graphql" . "gql"))
+
+(defconst org-babel-header-args:graphql
+  '((:url . :any)
+    (:variables . :any)
+    (:headers . :any))
+  "GraphQL-specific header arguments")
 
 ;;;###autoload
 (defun org-babel-execute:graphql (body params)
