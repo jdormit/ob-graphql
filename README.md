@@ -1,5 +1,6 @@
 # ob-graphql
 > GraphQL execution backend for org-babel
+
 [![MELPA](https://melpa.org/packages/ob-graphql-badge.svg)](https://melpa.org/#/ob-graphql)
 
 This package provides an execution backend for org-babel source blocks that can execute GraphQL queries and display the results inline.
