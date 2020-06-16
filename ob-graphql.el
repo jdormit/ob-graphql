@@ -46,6 +46,9 @@
 Called by `org-babel-execute-src-block' on source blocks declared
 as type \"graphql.\""
   (let* ((url (cdr (assq :url params)))
+         (url (if (org-file-url-p url)
+                  url
+                (org-babel-ref-resolve url)))
 	 (op-name (cdr (assq :operation params)))
 	 (variables (cdr (assq :variables params)))
 	 (variables-val (when variables
